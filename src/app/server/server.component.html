@@ -1,0 +1,20 @@
+
+<div class="parent" fxLayout="row" > 
+    <div class="comp1" >
+         {{testString}}
+        
+         
+    </div>
+    <app-servers></app-servers>
+</div>
+ 
+<div class="ServButton" fxLayout="center">
+    <form >
+        <input id="textBox" name="textBoxTest" #name>   
+    </form>
+    <button id="transferButton" class="btn btn-primary" (click)="transferThis(name.value)" >Transfer TextBoxText</button>
+    <button id="seleniumButton" class="btn btn-primary" (click)="callSelenium()" >Selenium Test</button>
+    <button id="appiumButton" class="btn btn-primary" (click)="callAppium()" >Appium Test</button>
+    
+</div>
+
